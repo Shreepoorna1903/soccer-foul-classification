@@ -114,7 +114,7 @@ All scripts should be run from the repository root. Scripts are numbered to indi
 
 ### Step 0 — Data download (one-time)
 
-Dataset access requires signing the **SoccerNet NDA** at [soccer-net.org](https://www.soccer-net.org/), after which the dataset password is provided.
+Dataset access requires signing the **SoccerNet  at [NDA**](https://docs.google.com/forms/d/e/1FAIpQLSfYFqjZNm4IgwGnyJXDPk2Ko_lZcbVtYX73w5lf6din5nxfmA/viewform), after which the dataset password is provided.
 
 **Option A — Use the provided wrapper script (recommended):**
 
