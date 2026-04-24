@@ -9,8 +9,6 @@ Features are saved per-split as .npy files in features/.
 
 Usage:
     python src/03_extract_features.py
-
-Estimated time: ~10-15 min on M4 MacBook Air
 """
 
 import numpy as np
