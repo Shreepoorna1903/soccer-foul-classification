@@ -247,7 +247,7 @@ All experiments were run on a **MacBook Air M4 (16 GB unified memory)** using Py
   - **Binary task** — `Between` labels and empty values are dropped.
   - **Multiclass task** — `Don't know` and `Dive` are dropped (annotator uncertainty and out-of-scope respectively).
 
-Dataset access requires signing the **SoccerNet NDA** at [soccer-net.org](https://www.soccer-net.org/). See Step 0 above for download instructions (wrapper script or direct API usage).
+Dataset access requires signing the SoccerNet [NDA](https://docs.google.com/forms/d/e/1FAIpQLSfYFqjZNm4IgwGnyJXDPk2Ko_lZcbVtYX73w5lf6din5nxfmA/viewform). See Step 0 above for download instructions (wrapper script or direct API usage).
 
 ---
 
