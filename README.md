@@ -114,11 +114,32 @@ All scripts should be run from the repository root. Scripts are numbered to indi
 
 ### Step 0 — Data download (one-time)
 
+Dataset access requires signing the **SoccerNet NDA** at [soccer-net.org](https://www.soccer-net.org/), after which the dataset password is provided.
+
+**Option A — Use the provided wrapper script (recommended):**
+
 ```bash
 python src/01_download_data.py
 ```
 
-You will be prompted for the SoccerNet credentials tied to your signed NDA. The script downloads `train`, `valid`, and `test` splits to `data/mvfoul/` and prints per-split clip counts for verification. Total download is ~7 GB.
+The script downloads `train`, `valid`, and `test` splits to `data/mvfoul/` and prints per-split clip counts for verification. The `challenge` split is intentionally excluded — it is SoccerNet's held-out evaluation set with no public labels and is not used anywhere in this pipeline.
+
+**Option B — Download manually via the official SoccerNet API:**
+
+If the wrapper script is unavailable or you prefer to invoke the SoccerNet API directly, the following snippet (from the [official SoccerNet documentation](https://www.soccer-net.org/)) achieves the same result:
+
+```python
+from SoccerNet.Downloader import SoccerNetDownloader as SNdl
+
+mySNdl = SNdl(LocalDirectory="data/mvfoul")
+mySNdl.downloadDataTask(
+    task="mvfouls",
+    split=["train", "valid", "test"],
+    password="<your NDA password>",
+)
+```
+
+Total download is ~7 GB.
 
 ### Step 1 — Dataset exploration (optional, for sanity)
 
@@ -226,7 +247,7 @@ All experiments were run on a **MacBook Air M4 (16 GB unified memory)** using Py
   - **Binary task** — `Between` labels and empty values are dropped.
   - **Multiclass task** — `Don't know` and `Dive` are dropped (annotator uncertainty and out-of-scope respectively).
 
-Dataset access requires signing the **SoccerNet NDA** at [soccer-net.org](https://www.soccer-net.org/). Credentials are prompted by the download script.
+Dataset access requires signing the **SoccerNet NDA** at [soccer-net.org](https://www.soccer-net.org/). See Step 0 above for download instructions (wrapper script or direct API usage).
 
 ---
 
