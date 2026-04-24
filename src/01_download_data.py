@@ -6,7 +6,7 @@ Usage:
     python src/01_download_data.py
 
 Prerequisites:
-    - Sign the NDA at https://www.soccer-net.org/ (you've already done this)
+    - Sign the NDA at https://www.soccer-net.org/ 
     - pip install SoccerNet
 """
 
