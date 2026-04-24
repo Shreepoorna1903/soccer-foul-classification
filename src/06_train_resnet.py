@@ -1,7 +1,6 @@
 """
 06_train_resnet.py
 Fine-tune ResNet-18 on middle frames for binary and multiclass tasks.
-Uses PyTorch with MPS (Apple Silicon) backend.
 
 Usage:
     python 06_train_resnet.py
