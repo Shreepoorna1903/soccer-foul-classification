@@ -68,7 +68,7 @@ models/                          # Saved model weights + per-model config JSON
 - **Python 3.10+** (developed and tested on 3.11)
 - **macOS with Apple Silicon** (M1/M2/M3/M4) for MPS acceleration — OR any CUDA GPU, OR CPU (slower but works)
 - **~8 GB free disk** for the dataset
-- **SoccerNet credentials** — you must sign the SoccerNet NDA at [soccer-net.org](https://www.soccer-net.org/) before the dataset can be downloaded. The dataset password is handled by the download script.
+- **SoccerNet credentials** — you must sign the SoccerNet [NDA**](https://docs.google.com/forms/d/e/1FAIpQLSfYFqjZNm4IgwGnyJXDPk2Ko_lZcbVtYX73w5lf6din5nxfmA/viewform) before the dataset can be downloaded. The dataset password is handled by the download script.
 
 ---
 
