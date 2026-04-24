@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+
+# virtual environment
+venv/
+.env
+
+# dataset and generated large files
+data/
+features/
+models/
+*.pt
+*.pkl
+*.npy
+*.npz
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
